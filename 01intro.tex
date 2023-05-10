@@ -1,0 +1,15 @@
+\chapter*{Introduction}\label{chap:intro}
+\addcontentsline{toc}{chapter}{Introduction}
+\markboth{INTRODUCTION}{INTRODUCTION}
+
+Graph theory is a field of mathematics aimed at studying the properties of structures representable by graphs. Graphs, in some use cases referred to as networks, are an integral part of contemporary computer science, with usages in artificial intelligence, machine learning, and data science.
+
+It might be advantageous to analyze the symmetries exhibited by a graph to gain more information about it. Symmetries are rotations, reflections, or permutations of vertices preserving the graph's structure and relationships between its vertices. Historically, algebraic tools, specifically groups and permutations, were used to describe the symmetries of graphs. For graphs with rich symmetries, the approach can provide beneficial information. However, most graphs do not have non-trivial symmetries, rendering this approach unsatisfactory \cite{er63}. Therefore, different algebraic tools, namely inverse semigroups, have been proposed as an alternative \cite{jjss21}. Using inverse semigroups also allows us to examine the graph's partial symmetries, meaning the symmetries of its induced subgraphs.
+
+Our thesis aims to study the partial symmetries of graphs, specifically focused on finding the partial symmetries of minimal asymmetric graphs \cite{sch17}.
+
+In the first chapter, we introduce concepts useful for our thesis. Firstly, focus on graphs and their utilization in real-world applications and list important definitions necessary for our work. We provide examples to help better illustrate and understand these concepts. We then explore algebraic tools, groups, and permutation groups used to study symmetries of graphs. Additionally, we extend the concept of symmetries from global to partial and examine algebraic tools used to study partial symmetries.
+
+In the second chapter, we talk about our implementation, the selection of the appropriate programming language for our solution, and list some existing libraries that deal with graphs and their symmetries. We examine the classes we implemented for our application, introduce our algorithm and explain how we implemented it. Afterward, we look at the steps we took to optimize the runtime of our algorithm and provide a comparison between different approaches. Finally, we introduce the web application we implemented to provide a user-friendly interface for working with our application.
+
+In the third chapter, we focused on the results we achieved with our solution and compare its performance to other existing solutions. We introduce the concept of \emph{asymmetric depth} and present our initial research into this idea. We also examine how the structure of graphs relates to the number of symmetries these graphs have.

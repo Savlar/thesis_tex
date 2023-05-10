@@ -1,0 +1,13 @@
+\chapter*{Conclusion}\label{chap:conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
+\markboth{CONCLUSION}{CONCLUSION}
+
+The main goal of our thesis was the study of minimal asymmetric graphs and their partial symmetries. For this purpose, we implemented a computer application in Python that constructs partial automorphism monoids for graphs. We programmed our application to work not only with minimal asymmetric graphs but with any graph. The process of finding all partial automorphisms of a graph is a computationally difficult task, due to combinatorial explosion, the rapid growth in the number of partial permutations, where for a 20 vertex graph, it is possible to have 1.7 sextillion ($1.7*10^{21}$) partial permutations. As we demonstrated in Section \ref{sec:random_tests}, our application can find all partial permutations for randomly generated graphs with at most 17 vertices and we achieved better performance than previous solutions, as we showed in Section \ref{sec:slavik_comparison}.
+
+Certain improvements could be made to our program to make it even more effective, such as optimizing it for certain families of graphs. For example, the graph isomorphism problem has a polynomial-time solution for trees \cite{tree_polyn}.
+
+In our graph filtering approach, we filtered graphs by their degree and triangle sequences. A triangle graph is one of 30 2- to 5-node graphlets \cite{graphlets}, connected induced subgraphs. Future research may involve further filtering graphs by graphlets. This would involve examining the structure of a graph and determining what graphlets would offer the biggest time save, by decreasing the number of times we need to check whether graphs are isomorphic. However, if we choose the graphlet incorrectly, the time cost of finding the graphlets might result in slower performance.
+
+We also examined the number of partial automorphisms for all graphs with less than 10 vertices. Our initial results might serve as a starting ramp in determining if we can approximate the number of partial automorphisms of a graph based on its structure. This would be useful in predicting how long it would take to find all partial automorphisms for a given graph.
+
+We also introduced the definition of \emph{asymmetric depth}. Asymmetric depth might be used to measure the asymmetricity of graphs, determining whether a given graph is more or less asymmetric than other graphs. A graph with $n$ vertices and maximal asymmetric depth $d$ is more asymmetric than other graphs with $n$ vertices and maximal asymmetric depth $d - 1$. We were able to find graphs with maximal asymmetric depth 4. Research in this area should focus on answering the question: \emph{What is the maximal asymmetric depth any graph with $n$ vertices can have?}
